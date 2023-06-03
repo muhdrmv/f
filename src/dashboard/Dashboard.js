@@ -403,12 +403,12 @@ export default function Dashboard({loggedInUser, setLoggedInUser, intendedUrl, r
             </Badge>
           </IconButton> */}
 
-            <NotificationMenu 	
+            {/* <NotificationMenu 	
               notifications={finalNotifData}	
               countNotifications={notificationsCount}	
               user_id={loggedInUser.id}	
               setNotificationsCount={setNotificationsCount}	
-            />
+            /> */}
 
             <Tooltip title="Profile">
               <IconButton color="inherit" onClick={handleClickProfileButton}>
@@ -646,7 +646,7 @@ export default function Dashboard({loggedInUser, setLoggedInUser, intendedUrl, r
                 </Route>
 
 
-                <Route exact path="/dashboard/tickets/:id/view">
+                {/* <Route exact path="/dashboard/tickets/:id/view">
                   {  
                     (loggedInUser.meta?.authType === 'internal' && loggedInUser.meta?.mustChangePassword) ?
                       <ChangePassword />
@@ -723,7 +723,7 @@ export default function Dashboard({loggedInUser, setLoggedInUser, intendedUrl, r
                     ['administrator', 'moderator', 'supervisor', 'auditor'].includes(loggedInUser.role) &&	
                     <AddNotification licenseInfo={licenseInfoData} loggedInUser={loggedInUser} />	
                   }	
-                </Route>	
+                </Route>	 */}
                 
                 <Route exact path="/dashboard/network-tools">
                   {  
@@ -752,7 +752,7 @@ export default function Dashboard({loggedInUser, setLoggedInUser, intendedUrl, r
                     <TraceRoute />
                   }
                 </Route>
-                <Route exact path="/dashboard/network-tools/netstat">
+                {/* <Route exact path="/dashboard/network-tools/netstat">
                   {  
                     (loggedInUser.meta?.authType === 'internal' && loggedInUser.meta?.mustChangePassword) ?
                       <ChangePassword />
@@ -770,7 +770,7 @@ export default function Dashboard({loggedInUser, setLoggedInUser, intendedUrl, r
                     ['administrator', 'moderator'].includes(loggedInUser.role) &&
                     <NetworkTools />
                   }
-                </Route>
+                </Route> */}
 
                 <Route exact path="/dashboard/live-sessions">
                   {  
@@ -839,7 +839,7 @@ export default function Dashboard({loggedInUser, setLoggedInUser, intendedUrl, r
                   }
                 </Route>
 
-                <Route path="/dashboard/user-behavior-analytics">
+                {/* <Route path="/dashboard/user-behavior-analytics">
                   {  
                     (loggedInUser.meta?.authType === 'internal' && loggedInUser.meta?.mustChangePassword) ?
                       <ChangePassword />
@@ -848,7 +848,7 @@ export default function Dashboard({loggedInUser, setLoggedInUser, intendedUrl, r
                     <UBA licenseInfo={licenseInfoData} />
                   }
                 </Route>
-                
+                 */}
                 <Route path="/dashboard/settings">
                   {  
                     (loggedInUser.meta?.authType === 'internal' && loggedInUser.meta?.mustChangePassword) ?

@@ -244,7 +244,7 @@ const SectionExternalAuthentication = () => {
         }
         setInProgress(false);
     };
-console.log(formState);
+
     return (
         <Paper className={classes.paper}>
             <TopToolbar toolbarTitle="Authentication"

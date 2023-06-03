@@ -62,7 +62,7 @@ const SectionSystemLicenseChallenge = () => {
         }
         setInProgress(true);
         try {
-            const mutationResult =   licenseChallenge({
+            const mutationResult = await licenseChallenge({
                 variables: {answer: licenseKey}
             });
             console.log(mutationResult);

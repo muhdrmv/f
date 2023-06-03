@@ -99,18 +99,18 @@ const SideNav = ({loggedInUser}) => {
                         <ListItemText primary="Access Rules"/>
                     </ListItem>
 
-                    <ListItem button component={Link} to="/dashboard/notifications" 	
+                    {/* <ListItem button component={Link} to="/dashboard/notifications" 	
                             style={{backgroundColor: location.pathname.startsWith('/dashboard/notifications') ? blue[50] : ''}}>	
                         <ListItemIcon>	
                             <NotificationsIcon />	
                         </ListItemIcon>	
                         <ListItemText primary="Notifications"/>	
-                    </ListItem>
+                    </ListItem> */}
 
                     </>
                 }
 
-                { roleOfTicketsManagement.includes(loggedInUser.role) &&
+                {/* { roleOfTicketsManagement.includes(loggedInUser.role) &&
                     <ListItem button component={Link} to="/dashboard/tickets" 	
                             style={{backgroundColor: location.pathname.startsWith('/dashboard/tickets') ? blue[50] : ''}}>	
                         <ListItemIcon>	
@@ -118,7 +118,7 @@ const SideNav = ({loggedInUser}) => {
                         </ListItemIcon>	
                         <ListItemText primary="Tickets"/>	
                     </ListItem>
-                }   
+                }    */}
 
             </div>
             <Divider/>
@@ -176,7 +176,7 @@ const SideNav = ({loggedInUser}) => {
                     </ListItem>
                 }
 
-                {['administrator', 'moderator'].includes(loggedInUser.role) &&
+                {/* {['administrator', 'moderator'].includes(loggedInUser.role) &&
                     <ListItem button component={Link} to="/dashboard/user-behavior-analytics"
                               style={{backgroundColor: location.pathname.startsWith('/dashboard/user-behavior-analytics') ? blue[50] : ''}}>
                         <ListItemIcon>
@@ -184,7 +184,7 @@ const SideNav = ({loggedInUser}) => {
                         </ListItemIcon>
                         <ListItemText primary="UBA"/>
                     </ListItem>
-                }
+                } */}
 
                 { ['administrator', 'moderator'].includes(loggedInUser.role) &&
                     <>

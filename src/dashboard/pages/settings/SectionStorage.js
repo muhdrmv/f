@@ -106,7 +106,7 @@ const SectionStorage = () => {
             const result = await actionDiskCleanup();
             console.log(result);
         } catch (e) {
-            console.log(e) 
+            console.log(e)
         }
         setFormState(s => ({...s, cleanupInProgress: false}) );
         alert('Disk cleanup completed.')
@@ -200,7 +200,7 @@ const SectionStorage = () => {
                                 </ul>
                             </li>
                         </ul>
-                        <Button
+                        {/* <Button
                             variant="outlined"
                             color="primary"
                             size="medium"
@@ -211,11 +211,11 @@ const SectionStorage = () => {
                             disabled={formState.cleanupInProgress}
                         >
                             Disk cleanup
-                        </Button>
+                        </Button> */}
                     </Grid>
                 </Grid>
 
-                <Divider style={{margin: '2em'}} />
+                {/* <Divider style={{margin: '2em'}} />
                 <Grid container spacing={3}>
                     <Grid item xs={12}>
                         <FormLabel component="legend">
@@ -273,7 +273,7 @@ const SectionStorage = () => {
                             Import recordings from shared directory
                         </Button>
                     </Grid>
-                </Grid>
+                </Grid> */}
             </form>
         </div>
         <Snackbar open={snackbarState.isOpen} message={snackbarState.message} />
