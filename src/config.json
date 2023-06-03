@@ -1,0 +1,19 @@
+{
+  "frontService": {
+    "passwordSalt": "xJrH2hht",
+    "licenseCertificate": "-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYLqvJ0WN59YJVq/UOTpFfRZs8\npXWFVdIhZXytsgij3V78PpnOSwtl2CgCTimOKre+FBPsFXF1Md7Ap2NjVFyxqnhH\nkTWz5MtRqqW9NzVsMKtTDo/7P9W1hOPNailo2U5uQbFArAvd/V45o8EveoD7psbd\nn2b7JxUni7bgkL443wIDAQAB\n-----END PUBLIC KEY-----"
+  },
+  "sessionService": {
+    "localStorageTokenKey": "GUAC_AUTH",
+    "recordingUrl": "/control-service/sess/recording"
+  },
+  "playbackService": {
+    "pageUrl": "/playback-service"
+  },
+  "tunnelService": {
+    "tunnelPageUrl": "/tunnel-service/"
+  },
+  "dataService": {
+    "url": "http://192.168.1.31/data-service"
+  }
+}
